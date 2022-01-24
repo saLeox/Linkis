@@ -11,15 +11,16 @@ Linkis 在上层应用程序和底层引擎之间构建了一层计算中间件�
 作为计算中间件，Linkis 提供了强大的连通、复用、编排、扩展和治理管控能力。通过计算中间件将应用层和引擎层解耦，简化了复杂的网络调用关系，降低了整体复杂度，同时节约了整体开发和维护成本。  
 Linkis 自2019年开源发布以来，已累计积累了700多家试验企业和1000+沙盒试验用户，涉及金融、电信、制造、互联网等多个行业。许多公司已经将Linkis 作为大数据平台底层计算存储引擎的统一入口，和计算请求/任务的治理管控利器。
 
-![没有Linkis 之前](images/before_linkis_cn.png)
+![没有Linkis 之前](https://user-images.githubusercontent.com/7869972/148767370-06025750-090e-4fd6-bd32-aab2fbb01352.png)
 
-![有了Linkis 之后](images/after_linkis_cn.png)
+
+![有了Linkis 之后](https://user-images.githubusercontent.com/7869972/148767358-b02ae982-4080-4efa-aa0f-768ca27902b7.png)
 
 # 核心特点
 
 - **丰富的底层计算存储引擎支持**。  
     **目前支持的计算存储引擎**：Spark、Hive、Python、Presto、ElasticSearch、MLSQL、TiSpark、JDBC和Shell等。  
-    **正在支持中的计算存储引擎**：Flink、Impala等。  
+    **正在支持中的计算存储引擎**：Flink(>=1.0.2版本已支持)、Impala等。  
     **支持的脚本语言**：SparkSQL, HiveQL, Python, Shell, Pyspark, R, Scala 和JDBC 等。    
 - **强大的计算治理能力**。基于Orchestrator、Label Manager和定制的Spring Cloud Gateway等服务，Linkis能够提供基于多级标签的跨集群/跨IDC 细粒度路由、负载均衡、多租户、流量控制、资源控制和编排策略(如双活、主备等)支持能力。  
 - **全栈计算存储引擎架构支持**。能够接收、执行和管理针对各种计算存储引擎的任务和请求，包括离线批量任务、交互式查询任务、实时流式任务和存储型任务；
@@ -31,7 +32,7 @@ Linkis 自2019年开源发布以来，已累计积累了700多家试验企业和
 
 | **引擎** | **引擎版本** | **Linkis 0.X 版本要求**| **Linkis 1.X 版本要求** | **说明** |
 |:---- |:---- |:---- |:---- |:---- |
-|Flink |1.11.0|\>=dev-0.12.0, PR #703 尚未合并|ongoing|	Flink EngineConn。支持FlinkSQL 代码，也支持以Flink Jar 形式启动一个新的Yarn 应用程序。|
+|Flink |1.12.2|\>=dev-0.12.0, PR #703 尚未合并|>=1.0.2|	Flink EngineConn。支持FlinkSQL 代码，也支持以Flink Jar 形式启动一个新的Yarn 应用程序。|
 |Impala|\>=3.2.0, CDH >=6.3.0"|\>=dev-0.12.0, PR #703 尚未合并|ongoing|Impala EngineConn. 支持Impala SQL 代码.|
 |Presto|\>= 0.180|\>=0.11.0|ongoing|Presto EngineConn. 支持Presto SQL 代码.|
 |ElasticSearch|\>=6.0|\>=0.11.0|ongoing|ElasticSearch EngineConn. 支持SQL 和DSL 代码.|
@@ -66,11 +67,11 @@ Linkis 基于微服务架构开发，其服务可以分为3类:计算治理服�
 - 微服务治理服务，包括定制化的Spring Cloud Gateway、Eureka、Open Feign。
 
 下面是Linkis 的架构概要图. 更多详细架构文档请见 [Linkis-Doc/Architecture](https://linkis.apache.org/zh-CN/docs/latest/architecture/overview).
-![architecture](images/Linkis_1.0_architecture.png)
+![architecture](https://user-images.githubusercontent.com/7869972/148767383-f87e84ba-5baa-4125-8b6e-d0aa4f7d3a66.png)
 
 基于Linkis 计算中间件，我们在大数据平台套件[WeDataSphere](https://github.com/WeBankFinTech/WeDataSphere) 中构建了许多应用和工具系统。下面是目前可用的开源项目。
 
-![wedatasphere_stack_Linkis](images/wedatasphere_stack_Linkis.png)
+![wedatasphere_stack_Linkis](https://user-images.githubusercontent.com/7869972/148767389-049361df-3609-4c2f-a4e2-c904c273300e.png)
 
 - [**DataSphere Studio** - 数据应用集成开发框架](https://github.com/WeBankFinTech/DataSphereStudio)
 
@@ -95,7 +96,7 @@ Linkis 基于微服务架构开发，其服务可以分为3类:计算治理服�
 
 对Linkis 的任何问题和建议，敬请提交issue，以便跟踪处理和经验沉淀共享。  
 您也可以扫描下面的二维码，加入我们的微信/QQ群，以获得更快速的响应。
-![introduction05](images/wedatasphere_contact_01.png)
+![introduction05](https://user-images.githubusercontent.com/7869972/148767386-0663f833-547d-4c30-8876-081bb966ffb8.png)
 
 Meetup 视频 [Bilibili](https://space.bilibili.com/598542776?from=search&seid=14344213924133040656).
 
